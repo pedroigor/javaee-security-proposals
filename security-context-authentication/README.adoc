@@ -1,0 +1,5 @@
+# security-context-authentication
+
+https://java.net/jira/browse/JAVAEE_SECURITY_SPEC-12
+
+From: Pedro Igor
