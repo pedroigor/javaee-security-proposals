@@ -1,0 +1,24 @@
+# security-context-authentication
+
+https://java.net/jira/browse/JAVAEE_SECURITY_SPEC-12
+
+From: Pedro Igor
+
+## Introduction
+
+This project demonstrates the Identity Store API and also how to use it with the `SecurityContext`, as defined by https://java.net/jira/browse/JAVAEE_SECURITY_SPEC-12.
+
+It provides two main packages with both *authentication* and *IdM* APIs:
+
+ * **javax/security/auth**, where the authentication API (for now only `SecurityContext`) is located.
+ * **javax/security/identity**, where the IdM API is located (for now only read-only `IdentityStore`).
+ 
+There is also a specific package with a default implementation for a fictitious EE container.
+
+ * **org/eecontainer**
+ 
+Some test cases are also provide to demonstrate how to use the API:
+
+ * How to authenticate using CDI, https://github.com/pedroigor/javaee-security-proposals/blob/identity-store-example/security-context-authentication/src/test/java/org/eecontainer/auth/test/CDIAuthenticationTestCase.java
+ 
+ * How to authenticate using Servlet API, https://github.com/pedroigor/javaee-security-proposals/blob/identity-store-example/security-context-authentication/src/test/java/org/eecontainer/auth/test/ServletAuthenticationTestCase.java
